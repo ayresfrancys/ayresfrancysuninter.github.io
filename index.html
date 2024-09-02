@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link para o arquivo CSS externo -->
+  </head>
+  <body>
+    <!-- Cabeçalho com Menu de Navegação -->
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li>
+              <a href="#" onclick="mostrarSecao('sobre-mim')">Sobre Mim</a>
+            </li>
+            <li><a href="#" onclick="mostrarSecao('formacao')">Formação</a></li>
+            <li>
+              <a href="#" onclick="mostrarSecao('portfolio')">Portfólio</a>
+            </li>
+            <li><a href="#" onclick="mostrarSecao('contato')">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Seção Sobre Mim -->
+    <section id="sobre-mim" class="secao active">
+      <div class="container">
+        <img src="/imagens/imagemsobremin.png" alt="Foto de Perfil" />
+        <div class="content">
+          <h2>Sobre Mim</h2>
+          <p>
+            Sou estudante de Tecnologia da Informação, apaixonado por tecnologia
+            e pelo impacto que ela pode ter em nossas vidas. Ao longo da minha
+            trajetória acadêmica, tenho me aprofundado nas diversas áreas da TI,
+            com um interesse especial em cibersegurança. Acredito que proteger
+            informações e sistemas críticos é fundamental no mundo conectado em
+            que vivemos, e estou constantemente em busca de novos conhecimentos
+            e habilidades para me tornar um profissional de destaque nessa área.
+          </p>
+          <p>
+            Tive a oportunidade de fazer um intercâmbio de inglês, onde não só
+            aperfeiçoei minhas habilidades linguísticas, mas também desenvolvi
+            uma visão mais global do setor de tecnologia. Essa experiência me
+            permitiu entender as dinâmicas de trabalho em diferentes culturas e
+            a importância da comunicação eficaz em um ambiente internacional.
+            Hoje, estou confortável em trabalhar com equipes multiculturais e em
+            colaborar em projetos que exigem uma compreensão profunda de
+            diferentes perspectivas.
+          </p>
+          <p>
+            Sou movido por desafios, especialmente aqueles que envolvem a
+            solução de problemas complexos e a investigação de crimes
+            cibernéticos. Adoro me debruçar sobre enigmas de segurança, buscando
+            a causa raiz de incidentes e desenvolvendo estratégias para prevenir
+            futuras ocorrências. Essa paixão por solucionar desafios não só me
+            motiva a seguir em frente, mas também a contribuir de maneira
+            significativa para a proteção dos dados e a segurança das
+            informações no mundo digital.
+          </p>
+        </div>
+      </div>
+    </section>
+
+ <!-- Seção Formação -->
+<section id="formacao" class="secao">
+    <div class="container">
+        <div class="formacao-content">
+            <div class="text-content">
+                <h2>Formação</h2>
+                <div class="education-item">
+                    <h3>ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</h3>
+                    <p>
+                        Universidade Centro universitário internacional uninter<br />
+                        JACAREI, SAO PAULO, BRASIL<br />
+                        Ano de Início 2023 – Ano de Conclusão Atualmente cursando
+                    </p>
+                </div>
+                <div class="education-item">
+                    <h3>Certificado de Proficiência em Inglês</h3>
+                    <p>
+                        ibat college dublin Programa de Intercâmbio<br />
+                        DUBLIN, IRLANDA<br />
+                        Ano de Conclusão Atualmente cursando
+                    </p>
+                </div>
+                <div class="education-item">
+                    <h3>Certificações em Cibersegurança</h3>
+                    <p>
+                        Certified Ethical Hacker (CEH), EC-Council<br />
+                        Ano de Conclusão Atualmente cursando
+                    </p>
+                    <br />
+                    <p>
+                        Cisco Certified CyberOps Associate, CISCO<br />
+                        Ano de Conclusão Atualmente cursando
+                    </p>
+                </div>
+            </div>
+            <!-- Imagem ao lado direito -->
+            <div class="image-content">
+                <img src="/imagens/imagenformacao.jpg" alt="Imagem de Formação" />
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Seção Portfólio -->
+<section id="portfolio" class="secao">
+    <div class="container">
+      <div class="portfolio-item">
+        <div class="portfolio-images">
+          <img src="/imagens/01.jpg" alt="Imagem do Projeto 1 - Celular" />
+          <img src="/imagens/02.jpg" alt="Imagem do Projeto 1 - Tablet" />
+          <img src="/imagens/03.jpg" alt="Imagem do Projeto 1 - Computador" />
+        </div>
+        <p>
+          Descrição breve do Projeto 1, com diferentes visualizações em
+          dispositivos: celular, tablet e computador.
+        </p>
+      </div>
+      <!-- Adicione mais projetos conforme necessário -->
+    </div>
+  </section>
+  
+
+    <!-- Seção Contato -->
+    <section id="contato" class="secao">
+      <div class="container">
+        <h2>Contato</h2>
+        <form action="envia_email.php" method="POST">
+          <!-- Action para enviar o formulário para um script PHP -->
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 [Seu Nome]. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <!-- Link para o arquivo JavaScript externo -->
+  </body>
+</html>
